@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>File Upload</h1>
+    <form id="createFolderForm">
+        <input type="text" id="folderName" placeholder="Folder Name" required />
+        <select id="parentFolderSelect">
+            <option value="">No Parent</option>
+        </select>
+        <button type="submit">Create Folder</button>
+    </form>
+    
+    <form id="uploadForm">
+        <input type="file" id="fileInput" required />
+        <select id="folderSelect"></select>
+        <button type="submit">Upload File</button>
+    </form>
+    
+    <div id="folders"></div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
